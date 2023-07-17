@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja 1.0</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label for="produto">Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto">
+            </div>
+            <div class="lineInput">
+                <label for="preco">Preço</label>
+                <input type="number" id="preco" placeholder="Preço do produto">
+            </div>
+
+            <button onclick="produto.salvar()" id="btn_salvar">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th class="center">ID</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th class="center">Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody">
+                    <!--
+                    <tr>
+                        <td>1</td>
+                        <td>Mesa para sala de jantar</td>
+                        <td>1.900,00</td>
+                        <td>
+                            <img src="./img/edit.png" alt="icone de editar">
+                            <img src="./img/trash.png" alt="icone de deletar">
+                        </td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
